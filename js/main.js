@@ -27,10 +27,17 @@ function adicionar(){
 //Botão finalizar
 function resultado(){
     let res = document.getElementById('res')
+    let txtnum = document.getElementById('txtnum')
     let maior = numeros[0]
     let menor = numeros[0]
     let soma = 0
     res.innerHTML = ''
+
+    //Não deixar finalizar sem adicionar valor
+    if(txtnum.value === ''){
+        window.alert('Adicione valores antes de finalizar.')
+        return
+    }
 
     //Quantidade de números cadastrados
     if(numeros.length > 1){

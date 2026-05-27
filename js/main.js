@@ -6,6 +6,10 @@ function adicionar(){
     let txtnum = document.getElementById('txtnum')
     let num = Number(txtnum.value)
     let adicionados = document.getElementById('selnum')
+    
+    //Limpar tela
+    let res = document.getElementById('res')
+    res.innerHTML = ''
 
     //Validar números entre 1 a 100
     if(num < 1 || num > 100){

@@ -69,5 +69,5 @@ function resultado(){
     res.innerHTML += `Somando todos os valores, temos <strong>${soma}</strong>. <br>`
 
     //Média do somátorio dos valores
-    res.innerHTML += `A média de todos os valores é <strong>${soma/numeros.length}</strong>. <br>`
+    res.innerHTML += `A média de todos os valores é <strong>${(soma/numeros.length).toFixed(1)}</strong>. <br>`
 }

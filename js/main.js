@@ -23,5 +23,5 @@ function adicionar(){
 
 
 function resultado(){
-
+    
 }
